@@ -5,7 +5,6 @@
 <body>
 <p><strong>Атака Инопланетян! <br>Атакуй их или сходи с планеты!</strong></p>
 </body>
-<div id="rainbow"></div>
 <div id="stage">
 <div id="background"></div>
 <div id="cannon"></div>
@@ -85,15 +84,6 @@ top: 240px;
 left: 145px;
 background-image: url('missle.png');
 }
-	#rainbow
-{
-	display:none;
-	width: 200px;
-	height: auto;
-	top: 0px;
-	left: 0px;
-	background-image: url('rainbow.png');
-}
 button
 {
 font-family: Arial, Helvetica, sans-serif;
@@ -142,7 +132,6 @@ var gameWon = false;
 var cannon = document.querySelector("#cannon");
 var alien = document.querySelector("#alien");
 var missile = document.querySelector("#missile");
-	var rainbow = document.querlySelector("#rainbow");
 //Поля ввода и вывода
 var inputX = document.querySelector("#inputX");
 var inputY = document.querySelector("#inputY");
@@ -162,11 +151,6 @@ cannon.style.left = guessX + "px";
 //Позиция ракеты
 missile.style.left = guessX + "px";
 missile.style.top = guessY + "px";
-	if(gameWon)
-#rainbow 
-{
-dispaly:block;
-}
 }
 window.addEventListener("keydown", keydownHandler, false); 
 function keydownHandler(event) 
