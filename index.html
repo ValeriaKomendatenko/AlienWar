@@ -131,7 +131,7 @@ var gameWon = false;
 //Объекты игры
 var cannon = document.querySelector("#cannon");
 var alien = document.querySelector("#alien");
-var missile = document.querySelector("#missile"); 
+var missile = document.querySelector("#missile");
 //Поля ввода и вывода
 var inputX = document.querySelector("#inputX");
 var inputY = document.querySelector("#inputY");
@@ -151,6 +151,7 @@ cannon.style.left = guessX + "px";
 //Позиция ракеты
 missile.style.left = guessX + "px";
 missile.style.top = guessY + "px";
+}
 window.addEventListener("keydown", keydownHandler, false); 
 function keydownHandler(event) 
 { 
@@ -249,6 +250,5 @@ output.innerHTML
 }
 //Отключение клавиши Enter 
 window.removeEventListener("keydown", keydownHandler, false);
-}
 }
 </script>
